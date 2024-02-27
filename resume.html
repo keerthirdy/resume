@@ -1,35 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Margin on Paragraphs</title>
-<style>
-.slove{
-    margin-left: 70%;
-    border: 3px solid red;
-    padding: 0px 0px 0px 150px;
-
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="keerthi reddy'>
+    <title>My Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="images/png/webp" href="anon.webp">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    <ol>
-        <li>
-    <p>Use inline CSS to apply margin property on p elements to get the following output:</p>
-</li>
-<p style="margin-bottom: 10px">*</p>
-<p style="margin-bottom: 20px">**</p>
-<p style="margin-bottom: 30px">***</p>
-<p style="margin-bottom: 40px">****</p>
-<p>
-    <li>
-        Use border and padding properties on a span element to get the following output:
-    </li>
-    <div class="slove">
-    <p>hello</p>
-</div>
-</p>
-</ol>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div>
+        <h1>keerthi reddy</h1>
+    </div>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="resume-content">
+        <font face="verdana" size="2">
+            <em>
+                <h4>Web Developer, Red Teaming, Bug Hunter</h4>
+            </em>
+        </font>
+        <p>
+            <font face="Open Sans">
+                <u><em><h3>Profile</h3></em></u>
+                
+                <i>
+                    Hello, I'm keerthi reddy, a cybersecurity enthusiast actively participating in Capture The Flag challenges. 
+                    Currently in my 4th semester of BCA, I have a strong academic background with a 7.89/10 CGPA. 
+                    My diverse skill set includes penetration testing, web application testing, and malware analysis, 
+                    along with proficiency in Linux and networking. Certified in Ethical Hacking and recognized for achievements in 
+                    cybersecurity challenges, I bring a blend of academic knowledge and practical expertise. 
+                    I am excited to contribute my skills to a dynamic team, having also participated in the Advent of Cyber challenges in 2023 and 2022.
+                </i>
+            </font>
+        </p>
+        <p>
+            <font face="Open Sans">
+                <u><em><h3>Objective </h3></em></u>
+                <i>Seeking a position that can give me an opportunity to enhance my core skill  and apply them for providing digital security to the people </i>
+            </font>
+        </p>
+        <p>
+            <font face="Open Sans">
+                <u><em><h3>Skills</h3></em></u>
+                <h4>Languages</h4>
+                <ul>
+                    <li>C</li>
+                    <li>Python</li>
+                    <li>Mojo (basics)</li>
+                    <li>Rust</li>
+                    <li>Kotlin</li>
+                    <li>Java</li>
+                    <li>Go-lang</li>
+                </ul>
+            </font>
+        </p>
+        <p>
+            <font face="Open Sans">
+                <h4>Tools</h4>
+                <ul>
+                    <li>Burp Suite, Nikto, OSAP ZAP</li>
+                    <li>Nmap, Wireshark</li>
+                    <li>Ghidra</li>
+                    <li>Gobuster, Dirbuster</li>
+                </ul>
+            </font>
+        </p>
+    </div>
+    </div>
+    <div class="cursor1"></div>
+    <div class="cursor2"></div>
+    <script>
+        var cursor1 = document.querySelector(".cursor1");
+        var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove", function(e) {
+            cursor1.style.transform = cursor2.style.transform = "translate(-50%, -50%) translate(" + e.clientX + "px, " + e.clientY + "px)";
+        });
+    </script>
 </body>
 </html>
